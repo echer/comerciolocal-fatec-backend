@@ -16,7 +16,7 @@ namespace ComercioLocalBackEnd.Repositories
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-        modelBuilder.Entity<Usuario>().ToTable("Usuarios");
+        modelBuilder.Entity<Usuario>().ToTable("Usuario");
         modelBuilder.Entity<Usuario>().Property(e => e.Id);
         modelBuilder.Entity<Usuario>().Property(e => e.Nome).IsRequired();
         modelBuilder.Entity<Usuario>().Property(e => e.DataNascimento);
@@ -25,7 +25,7 @@ namespace ComercioLocalBackEnd.Repositories
         modelBuilder.Entity<Usuario>().Property(e => e.TelefoneMovel).IsRequired();
         modelBuilder.Entity<Usuario>().Property(e => e.TelefoneFixo);
 
-        modelBuilder.Entity<Perfil>().ToTable("Perfis");
+        modelBuilder.Entity<Perfil>().ToTable("Perfil");
         modelBuilder.Entity<Perfil>().Property(e => e.Id);
         modelBuilder.Entity<Perfil>().Property(e => e.UsuarioId).IsRequired();
         modelBuilder.Entity<Perfil>().Property(e => e.Razao).IsRequired();
@@ -42,7 +42,7 @@ namespace ComercioLocalBackEnd.Repositories
         modelBuilder.Entity<Perfil>().Property(e => e.Pais).IsRequired();
         modelBuilder.Entity<Perfil>().Property(e => e.Segmento).IsRequired();
 
-        modelBuilder.Entity<Promocao>().ToTable("Promocoes");
+        modelBuilder.Entity<Promocao>().ToTable("Promocao");
         modelBuilder.Entity<Promocao>().Property(e => e.Id);
         modelBuilder.Entity<Promocao>().Property(e => e.PerfilId).IsRequired();
         modelBuilder.Entity<Promocao>().Property(e => e.DataInicio);
