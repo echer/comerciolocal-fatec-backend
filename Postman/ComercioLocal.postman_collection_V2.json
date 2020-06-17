@@ -1,0 +1,209 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ComercioLocal",
+		"_postman_id": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OBTEM DADOS USUARIO",
+			"request": {
+				"url": "http://localhost:5000/v1/usuario",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjkyOTg4ZWYxLTMwYzgtNDBmNC1iZmE2LTM5MmMzNjRmMDA4NSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTE5MDg3ODIsImV4cCI6MTU5MTkyNjc4MiwiaWF0IjoxNTkxOTA4NzgyfQ.jp-ralpizN6XMbJNksKVPhDmfMz5kKDDmPbCPW7hym0",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "CRIA CONTA PESSOAL",
+			"request": {
+				"url": "http://localhost:5000/v1/usuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Nome\":\"Alan Echer\",\n\t\"Tipo\":\"ContaPessoal\",\n\t\"DataNascimento\":\"\",\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN CONTA PESSOAL",
+			"request": {
+				"url": "http://localhost:5000/v1/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CRIA CONTA COMERCIAL",
+			"request": {
+				"url": "http://localhost:5000/v1/perfil",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Usuario\":{\n\t\t\"Nome\":\"Alan Echer 2\",\n\t\t\"Tipo\":\"ContaComercial\",\n\t\t\"DataNascimento\":\"\",\n\t\t\"Email\":\"alan.echer2@gmail.com\",\n\t\t\"Senha\":\"123teste\",\n\t\t\"TelefoneMovel\":\"17996272671\",\n\t\t\"TelefoneFixo\":\"\"\n\t},\n\t\"CPF\":\"03763831193\",\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN CONTA COMERCIAL",
+			"request": {
+				"url": "http://localhost:5000/v1/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\":\"alan.echer2@gmail.com\",\n\t\"Senha\":\"123teste\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OBTEM DADOS PERFIL",
+			"request": {
+				"url": "http://localhost:5000/v1/perfil",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwNzY3MSwiZXhwIjoxNTkxOTI1NjcxLCJpYXQiOjE1OTE5MDc2NzF9.Zze7ldMbL89YlkPEmXmpgIrcV9dTTedbZR2jtoDave0",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "ATUALIZA CONTA COMERCIAL",
+			"request": {
+				"url": "http://localhost:5000/v1/perfil",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Usuario\":{\n\t\t\"Nome\":\"Alan Echer 2\",\n\t\t\"DataNascimento\":\"\",\n\t\t\"TelefoneMovel\":\"17996272671\",\n\t\t\"TelefoneFixo\":\"\"\n\t},\n\t\"CPF\":\"03763831193\",\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ATUALIZA CONTA PESSOAL",
+			"request": {
+				"url": "http://localhost:5000/v1/usuario",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Nome\":\"Alan Echer 2\",\n\t\"DataNascimento\":\"\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "EXCLUIR CONTA COMERCIAL",
+			"request": {
+				"url": "http://localhost:5000/v1/perfil",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "EXCLUIR CONTA PESSOAL",
+			"request": {
+				"url": "http://localhost:5000/v1/usuario",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
