@@ -53,11 +53,11 @@
 		},
 		{
 			"id": "0c13afa9-082f-ff71-d23b-41035e7350d4",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0\nContent-Type: application/json\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ\nContent-Type: application/json\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ",
 					"description": "",
 					"enabled": true
 				},
@@ -68,11 +68,11 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/promocao?guidPromocao=a146ebdd-6913-4b95-8b58-310893997e4a",
+			"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/promocao?guidPromocao=a2e08e83-b4a8-4d4e-bca1-1e7f18ab5bee",
 			"queryParams": [
 				{
 					"key": "guidPromocao",
-					"value": "a146ebdd-6913-4b95-8b58-310893997e4a",
+					"value": "a2e08e83-b4a8-4d4e-bca1-1e7f18ab5bee",
 					"equals": true,
 					"description": "",
 					"enabled": true
@@ -88,7 +88,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1592352213161,
+			"time": 1592436367332,
 			"name": "EXCLUIR PROMOÇÃO",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
@@ -133,11 +133,11 @@
 		},
 		{
 			"id": "184d6c3f-f58c-384d-3cda-4a64d7731ba1",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0\nContent-Type: application/json\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ\nContent-Type: application/json\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ",
 					"description": "",
 					"enabled": true
 				},
@@ -148,7 +148,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/promocao",
+			"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/promocao",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -160,7 +160,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1592358321466,
+			"time": 1592436307877,
 			"name": "CRIA PROMOÇÃO",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
@@ -206,29 +206,28 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/login",
+			"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/login",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
 			"data": [],
 			"dataMode": "raw",
-			"name": "LOGIN CONTA PESSOAL",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1591904109319,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
+			"time": 1592436150762,
+			"name": "LOGIN CONTA PESSOAL",
+			"description": "",
+			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
+			"responses": [],
 			"rawModeData": "{\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\"\n}"
 		},
 		{
 			"id": "6ff95347-5085-55a4-1b21-962b0d29dc23",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -238,12 +237,12 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ",
 					"description": "",
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/promocao/",
+			"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/promocao/",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -255,7 +254,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1592352214716,
+			"time": 1592436287492,
 			"name": "LISTA PROMOCOES",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
@@ -358,7 +357,7 @@
 		},
 		{
 			"id": "dd451d26-39cf-2734-a2dd-9dbfb6dc7987",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTIwMTIsImV4cCI6MTU5MjM3MDAxMiwiaWF0IjoxNTkyMzUyMDEyfQ.hOrwxGMZcXUkv1nf6UiYxPN4Z3UU8UXjSYK4eBS-lm4\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -368,12 +367,12 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTIwMTIsImV4cCI6MTU5MjM3MDAxMiwiaWF0IjoxNTkyMzUyMDEyfQ.hOrwxGMZcXUkv1nf6UiYxPN4Z3UU8UXjSYK4eBS-lm4",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjRhNWEwOThlLTA4MDctNDE0Ni04ZGNiLTA0M2QzYTQ5NTcwYiIsIm5iZiI6MTU5MjQzNjExMiwiZXhwIjoxNTkyNDU0MTEyLCJpYXQiOjE1OTI0MzYxMTJ9.MatVs7WtfCWBsXjjJYWdsLESYbTRMHU7sjfFW0PPRPQ",
 					"description": "",
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/perfil",
+			"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/perfil",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -385,12 +384,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1592358323529,
+			"time": 1592436254623,
 			"name": "CRIA CONTA COMERCIAL",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
 			"responses": [],
-			"rawModeData": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+			"rawModeData": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"t\",\n\t\"CNPJ\":\"t\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"t\",\n\t\"CEP\":\"t\",\n\t\"Logradouro\":\"t\",\n\t\"Numero\":\"t\",\n\t\"Complemento\":\"t\",\n\t\"UF\":\"t\",\n\t\"Pais\":\"t\",\n\t\"Segmento\":\"t\"\n}"
 		}
 	]
 }

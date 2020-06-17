@@ -77,7 +77,8 @@ vazio
 	"Numero":"",
 	"Complemento":"",
 	"UF":"",
-	"Pais":""
+    "Pais":"",
+    "Segmento":""
 }
 ```
 
@@ -150,6 +151,7 @@ vazio
     "complemento": "",
     "uf": "",
     "pais": "",
+    "Segmento":"",
     "id": "eb52cc2a-3e8d-482b-93cd-eafb168750d9"
 }
 ```
@@ -173,7 +175,8 @@ vazio
 	"Numero":"",
 	"Complemento":"",
 	"UF":"",
-	"Pais":""
+    "Pais":"",
+    "Segmento":""
 }
 ```
 
