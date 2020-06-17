@@ -39,10 +39,8 @@ namespace ComercioLocalBackEnd
                 };
             });
 
-            //TODO COLOCAR BANCO HEROKU
-            //string strConn = Configuration.GetConnectionString("ComercioLocalDB"); 
-            // services.AddDbContext<DataContext>(options => options.UseSqlServer(strConn));
-            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("ComercioLocalDB"));
+            services.AddDbContext<DataContext>(options => options.UseNpgsql("Server=ec2-52-0-155-79.compute-1.amazonaws.com;Database=d9sqjoromd8v26;User ID=ieujrviqgtvpjm;Password=40b6cadad862bbfff54da6b6f4631ed79e5b8053ec3ae3af8b79f32d73f69688;"));
+            //services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("ComercioLocalDB"));
 
             services.AddTransient<IPerfilRepository, PerfilRepository>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
