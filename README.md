@@ -74,7 +74,7 @@ vazio
 	"Descricao":"",
 	"CEP":"",
 	"Logradouro":"",
-	"Endereco":"",
+	"Numero":"",
 	"Complemento":"",
 	"UF":"",
 	"Pais":""
@@ -146,7 +146,7 @@ vazio
     "descricao": "",
     "cep": "",
     "logradouro": "",
-    "endereco": "",
+    "numero": "",
     "complemento": "",
     "uf": "",
     "pais": "",
@@ -170,7 +170,7 @@ vazio
 	"Descricao":"",
 	"CEP":"",
 	"Logradouro":"",
-	"Endereco":"",
+	"Numero":"",
 	"Complemento":"",
 	"UF":"",
 	"Pais":""

@@ -56,7 +56,7 @@ namespace ComercioLocalBackEnd.Repositories
       _perfil.CNPJ = e.CNPJ;
       _perfil.CEP = e.CEP;
       _perfil.Logradouro = e.Logradouro;
-      _perfil.Endereco = e.Endereco;
+      _perfil.Numero = e.Numero;
       _perfil.DataAbertura = e.DataAbertura;
       _perfil.Complemento = e.Complemento;
       _perfil.UF = e.UF;
