@@ -15,7 +15,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjkyOTg4ZWYxLTMwYzgtNDBmNC1iZmE2LTM5MmMzNjRmMDA4NSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTE5MDg3ODIsImV4cCI6MTU5MTkyNjc4MiwiaWF0IjoxNTkxOTA4NzgyfQ.jp-ralpizN6XMbJNksKVPhDmfMz5kKDDmPbCPW7hym0",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQzODc4ZDZmLTVhNDAtNDFiYy05NjYwLTA4M2FjZjU5NTQwMiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTE0NTAsImV4cCI6MTU5MjM2OTQ1MCwiaWF0IjoxNTkyMzUxNDUwfQ.IskhUyO8PcWt3jFWTx_u7cmRlGbaZ7_RUEjDY4AbISA",
 						"description": ""
 					}
 				],
@@ -27,7 +27,7 @@
 		{
 			"name": "CRIA CONTA PESSOAL",
 			"request": {
-				"url": "http://localhost:5000/v1/usuario",
+				"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/usuario",
 				"method": "POST",
 				"header": [
 					{
@@ -38,7 +38,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Nome\":\"Alan Echer\",\n\t\"Tipo\":\"ContaPessoal\",\n\t\"DataNascimento\":\"\",\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
+					"raw": "{\n\t\"Nome\":\"Alan Echer\",\n\t\"DataNascimento\":\"\",\n\t\"Tipo\":\"ContaPessoal\",\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
 				},
 				"description": ""
 			},
@@ -74,31 +74,16 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"Usuario\":{\n\t\t\"Nome\":\"Alan Echer 2\",\n\t\t\"Tipo\":\"ContaComercial\",\n\t\t\"DataNascimento\":\"\",\n\t\t\"Email\":\"alan.echer2@gmail.com\",\n\t\t\"Senha\":\"123teste\",\n\t\t\"TelefoneMovel\":\"17996272671\",\n\t\t\"TelefoneFixo\":\"\"\n\t},\n\t\"CPF\":\"03763831193\",\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "LOGIN CONTA COMERCIAL",
-			"request": {
-				"url": "http://localhost:5000/v1/login",
-				"method": "POST",
-				"header": [
+					},
 					{
-						"key": "Content-Type",
-						"value": "application/json",
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTIwMTIsImV4cCI6MTU5MjM3MDAxMiwiaWF0IjoxNTkyMzUyMDEyfQ.hOrwxGMZcXUkv1nf6UiYxPN4Z3UU8UXjSYK4eBS-lm4",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Email\":\"alan.echer2@gmail.com\",\n\t\"Senha\":\"123teste\"\n}"
+					"raw": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
 				},
 				"description": ""
 			},
@@ -112,7 +97,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwNzY3MSwiZXhwIjoxNTkxOTI1NjcxLCJpYXQiOjE1OTE5MDc2NzF9.Zze7ldMbL89YlkPEmXmpgIrcV9dTTedbZR2jtoDave0",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVkODBmOWQ1LTc4ZDItNGJhMy04MzI0LTk3NDNlYzNlZDhkNSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTA0ODUsImV4cCI6MTU5MjM2ODQ4NSwiaWF0IjoxNTkyMzUwNDg1fQ.gr2QB82G3HMMNCnVJpPyt-TqosBheYAIvKekGYYHwZQ",
 						"description": ""
 					}
 				],
@@ -134,13 +119,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImM5YjA4YTRlLWQwNTctNDNkOC04MTdkLTE4MjVjOGM0OGQwYiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIyNjUxMzUsImV4cCI6MTU5MjI4MzEzNSwiaWF0IjoxNTkyMjY1MTM1fQ.GT2ley-y8oONngC801056hRTCDb1-39xmHgDtklf6EM",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Usuario\":{\n\t\t\"Nome\":\"Alan Echer 2\",\n\t\t\"DataNascimento\":\"\",\n\t\t\"TelefoneMovel\":\"17996272671\",\n\t\t\"TelefoneFixo\":\"\"\n\t},\n\t\"CPF\":\"03763831193\",\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+					"raw": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
 				},
 				"description": ""
 			},
@@ -159,13 +144,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQzODc4ZDZmLTVhNDAtNDFiYy05NjYwLTA4M2FjZjU5NTQwMiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTE0NTAsImV4cCI6MTU5MjM2OTQ1MCwiaWF0IjoxNTkyMzUxNDUwfQ.IskhUyO8PcWt3jFWTx_u7cmRlGbaZ7_RUEjDY4AbISA",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Nome\":\"Alan Echer 2\",\n\t\"DataNascimento\":\"\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
+					"raw": "{\n\t\"Nome\":\"Alan Echer 2\",\n\t\"DataNascimento\":\"2020-01-01 12:12:12\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
 				},
 				"description": ""
 			},
@@ -179,7 +164,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQ1Mzc5NWU5LTE1OWUtNDViMC05NjZlLWQ0YTAwOTM2NGViZCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIyNjU2MjIsImV4cCI6MTU5MjI4MzYyMiwiaWF0IjoxNTkyMjY1NjIyfQ.mMp5FTMOD7YeVWNO9KOStAFGZEs6s6rrijOIw0yO8Ss",
 						"description": ""
 					}
 				],
@@ -189,18 +174,96 @@
 			"response": []
 		},
 		{
-			"name": "EXCLUIR CONTA PESSOAL",
+			"name": "LISTA PROMOCOES",
 			"request": {
-				"url": "http://localhost:5000/v1/usuario",
+				"url": "http://localhost:5000/v1/promocao/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CRIA PROMOÇÃO",
+			"request": {
+				"url": "http://localhost:5000/v1/promocao",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"DataInicio\":\"\",\n\t\"DataFim\":\"\",\n\t\"Descricao\":\"Teste Promoção\",\n\t\"MidiaPromocao\":\"\",\n\t\"CupomPromocao\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "EXCLUIR PROMOÇÃO",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/v1/promocao?guidPromocao=a146ebdd-6913-4b95-8b58-310893997e4a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"promocao"
+					],
+					"query": [
+						{
+							"key": "guidPromocao",
+							"value": "a146ebdd-6913-4b95-8b58-310893997e4a",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
 				"method": "DELETE",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
 						"description": ""
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": ""
 			},
 			"response": []

@@ -7,12 +7,13 @@
 		"05d0e6f7-d6e4-fc89-f26d-4b80df02ebfe",
 		"24902c32-46ef-a22d-b18b-a5fd53c30a41",
 		"dd451d26-39cf-2734-a2dd-9dbfb6dc7987",
-		"080c76d8-5073-8280-1a26-b6a1ce96b46b",
 		"aad76ef1-5aa8-35d1-3555-12b17a1d8f1b",
 		"152582ae-dede-a470-adaa-85c2bd03baa3",
 		"6ffcad18-4f9e-1c33-ab63-412bd14ca745",
 		"1d921421-cb53-0074-7381-789df0582c06",
-		"0892b8c5-3e7d-a5fc-9196-4707db92c6f0"
+		"6ff95347-5085-55a4-1b21-962b0d29dc23",
+		"184d6c3f-f58c-384d-3cda-4a64d7731ba1",
+		"0c13afa9-082f-ff71-d23b-41035e7350d4"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -31,7 +32,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/usuario",
+			"url": "https://comerciolocal-fatec-backend.herokuapp.com/v1/usuario",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -43,17 +44,23 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1591908669502,
+			"time": 1592358325672,
 			"name": "CRIA CONTA PESSOAL",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
 			"responses": [],
-			"rawModeData": "{\n\t\"Nome\":\"Alan Echer\",\n\t\"Tipo\":\"ContaPessoal\",\n\t\"DataNascimento\":\"\",\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
+			"rawModeData": "{\n\t\"Nome\":\"Alan Echer\",\n\t\"DataNascimento\":\"\",\n\t\"Tipo\":\"ContaPessoal\",\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
 		},
 		{
-			"id": "080c76d8-5073-8280-1a26-b6a1ce96b46b",
-			"headers": "Content-Type: application/json\n",
+			"id": "0c13afa9-082f-ff71-d23b-41035e7350d4",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0\nContent-Type: application/json\n",
 			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+					"description": "",
+					"enabled": true
+				},
 				{
 					"key": "Content-Type",
 					"value": "application/json",
@@ -61,59 +68,36 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/login",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
-			"data": [],
-			"dataMode": "raw",
-			"name": "LOGIN CONTA COMERCIAL",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1591905544589,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"Email\":\"alan.echer2@gmail.com\",\n\t\"Senha\":\"123teste\"\n}"
-		},
-		{
-			"id": "0892b8c5-3e7d-a5fc-9196-4707db92c6f0",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE\n",
-			"headerData": [
+			"url": "http://localhost:5000/v1/promocao?guidPromocao=a146ebdd-6913-4b95-8b58-310893997e4a",
+			"queryParams": [
 				{
-					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE",
+					"key": "guidPromocao",
+					"value": "a146ebdd-6913-4b95-8b58-310893997e4a",
+					"equals": true,
 					"description": "",
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/v1/usuario",
-			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "DELETE",
-			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
-			"data": null,
-			"dataMode": "params",
-			"name": "EXCLUIR CONTA PESSOAL",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1591909368942,
+			"data": [],
+			"dataMode": "raw",
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"time": 1592352213161,
+			"name": "EXCLUIR PROMOÇÃO",
+			"description": "",
+			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
+			"responses": [],
+			"rawModeData": ""
 		},
 		{
 			"id": "152582ae-dede-a470-adaa-85c2bd03baa3",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImM5YjA4YTRlLWQwNTctNDNkOC04MTdkLTE4MjVjOGM0OGQwYiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIyNjUxMzUsImV4cCI6MTU5MjI4MzEzNSwiaWF0IjoxNTkyMjY1MTM1fQ.GT2ley-y8oONngC801056hRTCDb1-39xmHgDtklf6EM\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -123,7 +107,7 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImM5YjA4YTRlLWQwNTctNDNkOC04MTdkLTE4MjVjOGM0OGQwYiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIyNjUxMzUsImV4cCI6MTU5MjI4MzEzNSwiaWF0IjoxNTkyMjY1MTM1fQ.GT2ley-y8oONngC801056hRTCDb1-39xmHgDtklf6EM",
 					"description": "",
 					"enabled": true
 				}
@@ -140,20 +124,56 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1591908473777,
+			"time": 1592265253320,
 			"name": "ATUALIZA CONTA COMERCIAL",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
 			"responses": [],
-			"rawModeData": "{\n\t\"Usuario\":{\n\t\t\"Nome\":\"Alan Echer 2\",\n\t\t\"DataNascimento\":\"\",\n\t\t\"TelefoneMovel\":\"17996272671\",\n\t\t\"TelefoneFixo\":\"\"\n\t},\n\t\"CPF\":\"03763831193\",\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+			"rawModeData": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
 		},
 		{
-			"id": "1d921421-cb53-0074-7381-789df0582c06",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE\n",
+			"id": "184d6c3f-f58c-384d-3cda-4a64d7731ba1",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0\nContent-Type: application/json\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjY5MzI5ZGM1LWY3NTAtNDM5Zi1iZjUyLWQwNDQ4Y2IyN2FkYiIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwOTMyNiwiZXhwIjoxNTkxOTI3MzI2LCJpYXQiOjE1OTE5MDkzMjZ9.Q2n4ojZawLZKBAha0uVcMUGyM5HwiZandN8diTxudeE",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/v1/promocao",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592358321466,
+			"name": "CRIA PROMOÇÃO",
+			"description": "",
+			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
+			"responses": [],
+			"rawModeData": "{\n\t\"DataInicio\":\"\",\n\t\"DataFim\":\"\",\n\t\"Descricao\":\"Teste Promoção\",\n\t\"MidiaPromocao\":\"\",\n\t\"CupomPromocao\":\"\"\n}"
+		},
+		{
+			"id": "1d921421-cb53-0074-7381-789df0582c06",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQ1Mzc5NWU5LTE1OWUtNDViMC05NjZlLWQ0YTAwOTM2NGViZCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIyNjU2MjIsImV4cCI6MTU5MjI4MzYyMiwiaWF0IjoxNTkyMjY1NjIyfQ.mMp5FTMOD7YeVWNO9KOStAFGZEs6s6rrijOIw0yO8Ss\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQ1Mzc5NWU5LTE1OWUtNDViMC05NjZlLWQ0YTAwOTM2NGViZCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIyNjU2MjIsImV4cCI6MTU5MjI4MzYyMiwiaWF0IjoxNTkyMjY1NjIyfQ.mMp5FTMOD7YeVWNO9KOStAFGZEs6s6rrijOIw0yO8Ss",
 					"description": "",
 					"enabled": true
 				}
@@ -169,7 +189,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1591909347014,
+			"time": 1592267508668,
 			"name": "EXCLUIR CONTA COMERCIAL",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
@@ -207,8 +227,8 @@
 			"rawModeData": "{\n\t\"Email\":\"alan.echer@gmail.com\",\n\t\"Senha\":\"123teste\"\n}"
 		},
 		{
-			"id": "6ffcad18-4f9e-1c33-ab63-412bd14ca745",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8\n",
+			"id": "6ff95347-5085-55a4-1b21-962b0d29dc23",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -218,38 +238,73 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwODAzMiwiZXhwIjoxNTkxOTI2MDMyLCJpYXQiOjE1OTE5MDgwMzJ9.X6XLs7LiX-Fqrfc-LI5XiAQ6h43X-uNQhMC5JbHGti8",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MjM1MjAyMiwiZXhwIjoxNTkyMzcwMDIyLCJpYXQiOjE1OTIzNTIwMjJ9.LpRYwR7RMP99iowqTeBzit0viRa5EfOmspRKFOpFAM0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/v1/promocao/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592352214716,
+			"name": "LISTA PROMOCOES",
+			"description": "",
+			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
+			"responses": [],
+			"rawModeData": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+		},
+		{
+			"id": "6ffcad18-4f9e-1c33-ab63-412bd14ca745",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQzODc4ZDZmLTVhNDAtNDFiYy05NjYwLTA4M2FjZjU5NTQwMiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTE0NTAsImV4cCI6MTU5MjM2OTQ1MCwiaWF0IjoxNTkyMzUxNDUwfQ.IskhUyO8PcWt3jFWTx_u7cmRlGbaZ7_RUEjDY4AbISA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQzODc4ZDZmLTVhNDAtNDFiYy05NjYwLTA4M2FjZjU5NTQwMiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTE0NTAsImV4cCI6MTU5MjM2OTQ1MCwiaWF0IjoxNTkyMzUxNDUwfQ.IskhUyO8PcWt3jFWTx_u7cmRlGbaZ7_RUEjDY4AbISA",
 					"description": "",
 					"enabled": true
 				}
 			],
 			"url": "http://localhost:5000/v1/usuario",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "PUT",
-			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
 			"data": [],
 			"dataMode": "raw",
-			"name": "ATUALIZA CONTA PESSOAL",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1591908566265,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"rawModeData": "{\n\t\"Nome\":\"Alan Echer 2\",\n\t\"DataNascimento\":\"\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
+			"time": 1592351747148,
+			"name": "ATUALIZA CONTA PESSOAL",
+			"description": "",
+			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
+			"responses": [],
+			"rawModeData": "{\n\t\"Nome\":\"Alan Echer 2\",\n\t\"DataNascimento\":\"2020-01-01 12:12:12\",\n\t\"TelefoneMovel\":\"17996272671\",\n\t\"TelefoneFixo\":\"\"\n}"
 		},
 		{
 			"id": "8c7d106d-7fb6-6f1b-b25c-895567107e18",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjkyOTg4ZWYxLTMwYzgtNDBmNC1iZmE2LTM5MmMzNjRmMDA4NSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTE5MDg3ODIsImV4cCI6MTU5MTkyNjc4MiwiaWF0IjoxNTkxOTA4NzgyfQ.jp-ralpizN6XMbJNksKVPhDmfMz5kKDDmPbCPW7hym0\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQzODc4ZDZmLTVhNDAtNDFiYy05NjYwLTA4M2FjZjU5NTQwMiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTE0NTAsImV4cCI6MTU5MjM2OTQ1MCwiaWF0IjoxNTkyMzUxNDUwfQ.IskhUyO8PcWt3jFWTx_u7cmRlGbaZ7_RUEjDY4AbISA\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjkyOTg4ZWYxLTMwYzgtNDBmNC1iZmE2LTM5MmMzNjRmMDA4NSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTE5MDg3ODIsImV4cCI6MTU5MTkyNjc4MiwiaWF0IjoxNTkxOTA4NzgyfQ.jp-ralpizN6XMbJNksKVPhDmfMz5kKDDmPbCPW7hym0",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImQzODc4ZDZmLTVhNDAtNDFiYy05NjYwLTA4M2FjZjU5NTQwMiIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTE0NTAsImV4cCI6MTU5MjM2OTQ1MCwiaWF0IjoxNTkyMzUxNDUwfQ.IskhUyO8PcWt3jFWTx_u7cmRlGbaZ7_RUEjDY4AbISA",
 					"description": "",
 					"enabled": true
 				}
@@ -266,7 +321,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1591909018409,
+			"time": 1592351744837,
 			"name": "OBTEM DADOS USUARIO",
 			"description": "\t\t",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
@@ -274,11 +329,11 @@
 		},
 		{
 			"id": "aad76ef1-5aa8-35d1-3555-12b17a1d8f1b",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwNzY3MSwiZXhwIjoxNTkxOTI1NjcxLCJpYXQiOjE1OTE5MDc2NzF9.Zze7ldMbL89YlkPEmXmpgIrcV9dTTedbZR2jtoDave0\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVkODBmOWQ1LTc4ZDItNGJhMy04MzI0LTk3NDNlYzNlZDhkNSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTA0ODUsImV4cCI6MTU5MjM2ODQ4NSwiaWF0IjoxNTkyMzUwNDg1fQ.gr2QB82G3HMMNCnVJpPyt-TqosBheYAIvKekGYYHwZQ\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVmZjc1ZGQ1LThlZWQtNDZjZi04MjE1LTY2M2VlMjdiY2JkYSIsInJvbGUiOiJDb250YUNvbWVyY2lhbCIsIm5iZiI6MTU5MTkwNzY3MSwiZXhwIjoxNTkxOTI1NjcxLCJpYXQiOjE1OTE5MDc2NzF9.Zze7ldMbL89YlkPEmXmpgIrcV9dTTedbZR2jtoDave0",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVkODBmOWQ1LTc4ZDItNGJhMy04MzI0LTk3NDNlYzNlZDhkNSIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTA0ODUsImV4cCI6MTU5MjM2ODQ4NSwiaWF0IjoxNTkyMzUwNDg1fQ.gr2QB82G3HMMNCnVJpPyt-TqosBheYAIvKekGYYHwZQ",
 					"description": "",
 					"enabled": true
 				}
@@ -295,7 +350,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1591908023765,
+			"time": 1592351221923,
 			"name": "OBTEM DADOS PERFIL",
 			"description": "\t\t",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
@@ -303,11 +358,17 @@
 		},
 		{
 			"id": "dd451d26-39cf-2734-a2dd-9dbfb6dc7987",
-			"headers": "Content-Type: application/json\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTIwMTIsImV4cCI6MTU5MjM3MDAxMiwiaWF0IjoxNTkyMzUyMDEyfQ.hOrwxGMZcXUkv1nf6UiYxPN4Z3UU8UXjSYK4eBS-lm4\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
 					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjcxOTBhZGQxLWRhNGYtNGI4NC1iNmE3LTYxMzIyMjcwMDBkNCIsInJvbGUiOiJDb250YVBlc3NvYWwiLCJuYmYiOjE1OTIzNTIwMTIsImV4cCI6MTU5MjM3MDAxMiwiaWF0IjoxNTkyMzUyMDEyfQ.hOrwxGMZcXUkv1nf6UiYxPN4Z3UU8UXjSYK4eBS-lm4",
 					"description": "",
 					"enabled": true
 				}
@@ -324,12 +385,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1591908048294,
+			"time": 1592358323529,
 			"name": "CRIA CONTA COMERCIAL",
 			"description": "",
 			"collectionId": "6acc41b8-39a2-8a97-bebb-f82c8ceccf03",
 			"responses": [],
-			"rawModeData": "{\n\t\"Usuario\":{\n\t\t\"Nome\":\"Alan Echer 2\",\n\t\t\"Tipo\":\"ContaComercial\",\n\t\t\"DataNascimento\":\"\",\n\t\t\"Email\":\"alan.echer2@gmail.com\",\n\t\t\"Senha\":\"123teste\",\n\t\t\"TelefoneMovel\":\"17996272671\",\n\t\t\"TelefoneFixo\":\"\"\n\t},\n\t\"CPF\":\"03763831193\",\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
+			"rawModeData": "{\n\t\"Razao\":\"Teste\",\n\t\"Fantasia\":\"teste\",\n\t\"DataAbertura\":\"\",\n\t\"CNPJ\":\"\",\n\t\"Site\":\"\",\n\t\"Descricao\":\"\",\n\t\"CEP\":\"\",\n\t\"Logradouro\":\"\",\n\t\"Endereco\":\"\",\n\t\"Complemento\":\"\",\n\t\"UF\":\"\",\n\t\"Pais\":\"\"\n}"
 		}
 	]
 }
