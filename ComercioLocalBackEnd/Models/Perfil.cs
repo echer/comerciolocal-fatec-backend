@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ComercioLocalBackEnd.Models{
@@ -30,6 +31,8 @@ namespace ComercioLocalBackEnd.Models{
         public string Pais{get;set;}
         [Required]
         public string Segmento{get;set;}
+
+        public ICollection<Promocao> Promocoes { get; set; }
 
         public Perfil(){
             

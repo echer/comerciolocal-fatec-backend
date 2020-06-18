@@ -39,7 +39,7 @@ namespace ComercioLocalBackEnd
                 };
             });
 
-            services.AddDbContext<DataContext>(options => options.UseNpgsql("Server=ec2-52-0-155-79.compute-1.amazonaws.com;Database=d9sqjoromd8v26;User ID=ieujrviqgtvpjm;Password=40b6cadad862bbfff54da6b6f4631ed79e5b8053ec3ae3af8b79f32d73f69688;"));
+            services.AddDbContext<DataContext>(options => options.UseNpgsql("Server=ec2-54-147-209-121.compute-1.amazonaws.com;Database=da30ffl7k6kfii;User ID=xasjzyuhjkzbis;Password=81ceb1d804e02fbd4937944168e53f19a3b5426bc99cc9a3c48d5f4840952243;"));
             //services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("ComercioLocalDB"));
 
             services.AddTransient<IPerfilRepository, PerfilRepository>();

@@ -60,6 +60,9 @@ namespace ComercioLocalBackEnd.Repositories
             .HasOne(p => p.Perfil)
             .WithOne();
 
+        modelBuilder.Entity<Perfil>()
+            .HasMany(p => p.Promocoes)
+            .WithOne(p => p.Perfil);
         
     }
 
