@@ -15,13 +15,17 @@ namespace ComercioLocalBackEnd.Controllers
     {
 
         [HttpGet]
-        public IActionResult Get([FromServices] IPerfilRepository repository)
+        public IActionResult Get(string guidPerfil, [FromServices] IPerfilRepository repository)
         {
-            var perfil = repository.FindByuser(new Guid(User.Identity.Name));
-            if(perfil == null)
-                return Unauthorized();
-            perfil.Usuario.Senha = "";
-            return Ok(perfil);
+            if(guidPerfil != null && guidPerfil != ""){
+                return Ok(repository.Find(new Guid(guidPerfil)));
+            }else{
+                var perfil = repository.FindByuser(new Guid(User.Identity.Name));
+                if(perfil == null)
+                    return Unauthorized();
+                perfil.Usuario.Senha = "";
+                return Ok(perfil);
+            }
         }
 
         [HttpPost]

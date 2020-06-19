@@ -10,6 +10,7 @@ namespace ComercioLocalBackEnd.Repositories
   public interface IPerfilRepository
   {
     Perfil FindByuser(Guid idUser);
+    Perfil Find(Guid idPerfil);
     void Create(Perfil e);
     void UpdateByUser(Guid idUser, Perfil e);
     void DeleteByUser(Guid idUser);
@@ -40,6 +41,14 @@ namespace ComercioLocalBackEnd.Repositories
     public Perfil FindByuser(Guid idUser)
     {
       var perfil = _context.Perfis.Where(p => p.Usuario.Id == idUser).SingleOrDefault();
+      if(perfil != null)
+        _context.Entry(perfil).Reference(p => p.Usuario).Load();
+      return perfil;
+    }
+
+    public Perfil Find(Guid idPerfil)
+    {
+      var perfil = _context.Perfis.Find(idPerfil);
       if(perfil != null)
         _context.Entry(perfil).Reference(p => p.Usuario).Load();
       return perfil;
