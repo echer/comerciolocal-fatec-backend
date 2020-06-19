@@ -57,6 +57,12 @@ namespace ComercioLocalBackEnd
 
             app.UseRouting();
 
+            app.UseCors( option =>
+                option.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin());
+
+
             app.UseAuthentication();
             app.UseAuthorization();
 
