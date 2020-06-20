@@ -41,7 +41,11 @@ namespace ComercioLocalBackEnd.Repositories
 
     public List<Promocao> Find(Guid idPerfil)
     {
-      return _context.Promocoes.Where(p => p.PerfilId == idPerfil).ToList();
+      var list = _context.Promocoes.Where(p => p.PerfilId == idPerfil).ToList();
+      foreach (var promo in list) {
+          _context.Entry(promo).Reference(p => p.Perfil).Load();
+      }
+      return list;
     }
 
     public List<Promocao> Find()
