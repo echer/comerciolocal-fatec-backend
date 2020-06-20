@@ -41,16 +41,16 @@ namespace ComercioLocalBackEnd.Repositories
 
     public List<Promocao> Find(Guid idPerfil)
     {
-      var list = _context.Promocoes.Where(p => p.PerfilId == idPerfil).ToList();
-      foreach (var promo in list) {
-          _context.Entry(promo).Reference(p => p.Perfil).Load();
-      }
-      return list;
+      return _context.Promocoes.Where(p => p.PerfilId == idPerfil).ToList();
     }
 
     public List<Promocao> Find()
     {
-      return _context.Promocoes.ToList();
+      var list = _context.Promocoes.ToList();
+      foreach (var promo in list) {
+          _context.Entry(promo).Reference(p => p.Perfil).Load();
+      }
+      return list;
     }
 
     public Promocao Find(Guid idPromocao, Guid idPerfil){
