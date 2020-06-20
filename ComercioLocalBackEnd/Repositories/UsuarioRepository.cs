@@ -64,7 +64,7 @@ namespace ComercioLocalBackEnd.Repositories
       _usuario.DataNascimento = e.DataNascimento;
       _usuario.TelefoneFixo = e.TelefoneFixo;
       _usuario.TelefoneMovel = e.TelefoneMovel;
-      if(e.Senha != "")
+      if(e.Senha != null && e.Senha != "")
         _usuario.Senha = e.Senha;
       _context.Entry(_usuario).State = EntityState.Modified;
       _context.SaveChanges();
