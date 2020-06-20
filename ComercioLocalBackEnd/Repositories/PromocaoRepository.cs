@@ -48,7 +48,7 @@ namespace ComercioLocalBackEnd.Repositories
     {
       var list = _context.Promocoes.ToList();
       foreach (var promo in list) {
-          _context.Entry(promo).Reference(p => p.Perfil).Load();
+          //_context.Entry(promo).Reference(p => p.Perfil).Load();
       }
       return list;
     }
